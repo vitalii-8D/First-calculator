@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #A0CBDE;
+}
+.calculator {
+	display: inline-block;
+	margin: 50px auto 0;
+	border: 1px solid #333;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+	/*background-color: violet;*/
+}
+/* TABLO */
+.tablo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 60px;
+	/*margin: 10px 0;*/
+	padding: 15px;
+	background-color: #242434;
+	
+	font-size: 26px;
+	color: #f6f6f6;
+}
+/*.tablo > div:not(.equal) {
+	height: 30px;	
+	padding: 5px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}*/
+.input-fields {
+	/*flex: 1 0;*/
+	/*background-color: #fff;*/
+}
+.input-field {
+	height: 100px;
+}
+/*.equal {
+	font-size: 2px;
+	font-weight: 700;
+	margin: 0 5px;
+}*/
+.result-field {
+	/*background-color: #fff;*/
+	/*width: 70px;*/
+	text-align: center;
+	overflow: hidden;
+}
+
+/*BUTTONS*/
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	background-color: #F7F7F7;
+	/*padding: 10px;*/
+}
+.buttons>div {
+	/*flex-grow: 1;*/
+}
+.buttons button {
+	font-size: 22px;
+	color: #333;
+	text-align: center;
+	outline: none;
+	border: 0.5px solid #aaa;
+	position: relative;
+	  text-align: center;
+	  -webkit-transition-duration: 0.4s; /* Safari */
+	  transition-duration: 0.4s;
+	  text-decoration: none;
+	  overflow: hidden;
+	  cursor: pointer;
+}
+.buttons button:hover {
+	background-color: #c5c5c5;
+}
+.buttons button:after {
+  content: "";
+  background: #333;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.buttons button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.number-buttons {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	grid-template-rows: repeat(4, 60px);
+	/*grid-gap: 10px;*/
+}
+.functions-buttons {
+	display: grid;
+	grid-template-columns: 80px;
+	grid-template-rows: repeat(4, 60px);
+	/*grid-gap: 10px;*/
+	/*margin-left: 25px;*/
+}
+.functions-buttons button {
+	background-color: #d9d9d9;
+}
+.functions-buttons button:hover {
+	background-color: #999;
+}
+.clear {
+	background-color: #F78765;
+}
+.buttons .clear:hover {
+	background-color: #F75735;
+}
+.equal-btn {
+	background-color: #90EE90;
+}
+.buttons .equal-btn:hover {
+	background-color: #50fE50;
+}
